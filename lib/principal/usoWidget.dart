@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginflutter/principal/campos.dart';
 
 class usoWidget extends StatefulWidget {
   usoWidget({Key? key}) : super(key: key);
@@ -34,7 +35,9 @@ Widget mensaje() {
           children: <Widget>[
             nombre(), 
             camposUsuario(),
-             camposPass ()
+            camposPass (),
+            botonAceptar(),
+            botonCancelar()
 
           ],
         )
@@ -53,30 +56,3 @@ Widget nombre() {
 }
 
 
-Widget camposUsuario () {
-  return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-      child:TextField(
-        decoration:  InputDecoration(
-          hintText: "UsuarioHint",
-          fillColor: Colors.white, 
-          filled: true        
-        )
-      ),
-    );
-}
-
-
-Widget camposPass () {
-  return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-      child:TextField(
-        obscureText: true,
-        decoration:  InputDecoration(
-          hintText: "Password",
-          fillColor: Colors.white, 
-          filled: true        
-        )
-      ),
-    );
-}
