@@ -55,7 +55,9 @@ Widget nombre() {
 Widget camposUsuario () {
   return TextField(
       decoration:  InputDecoration(
-        hintText: "UsuarioHint"
+        hintText: "UsuarioHint",
+        fillColor: Colors.white, 
+        filled: true        
       )
     );
 }
