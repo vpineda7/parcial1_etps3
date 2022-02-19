@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginflutter/principal/usoWidget.dart';
 
 void main() {
   runApp(UsoWidgets());
@@ -11,30 +12,9 @@ class UsoWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-								title:"<<Text>>",
+								title:"Clase Widget",
 								home:usoWidget(),
 						 );
   }
 }
 
-class usoWidget extends StatefulWidget {
-  usoWidget({Key? key}) : super(key: key);
-
-  @override
-  State<usoWidget> createState() => _usoWidgetState();
-}
-
-class _usoWidgetState extends State<usoWidget> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Widgets')
-        ),
-      body: Center(
-        child: Text('Saludos'),
-        )
-
-    );
-  }
-}

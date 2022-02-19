@@ -1,0 +1,18 @@
+echo %tokenGithub%
+curl -u vpineda7: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 https://api.github.com/user/repos -d "{\"name\":\"ejeLoginFlutter_etps3\"}"
+curl -u vpineda7:%tokenGithub% https://api.github.com/user/repos -d "{\"name\":\"ejeLoginFlutter_etps3\"}"
+cls
+git status
+git add . 
+git remote add origin "https://github.com/vpineda7/ejeLoginFlutter_etps3"
+git remote -v
+git status
+git add . && git commit -m "proyecto inicial funcional"
+git status 
+git push origin master
+git status
+git remote -v
+git push
+git push origin master
+git status
+doskey /h >> history19-02-22.txt
