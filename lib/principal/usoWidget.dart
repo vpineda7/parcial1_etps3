@@ -36,6 +36,9 @@ Widget mensaje() {
             nombre(), 
             camposUsuario(),
             camposPass (),
+            SizedBox(
+              height: 20,
+            ),
             botonAceptar(),
             botonCancelar()
 
