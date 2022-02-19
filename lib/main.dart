@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loginflutter/principal/usoWidget.dart';
+import 'package:loginflutter/principal/principal.dart';
 
 void main() {
   runApp(UsoWidgets());
@@ -13,7 +13,8 @@ class UsoWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 								title:"Clase Widget",
-								home:usoWidget(),
+								// home:principa(),
+                home:Principal(),
 						 );
   }
 }
