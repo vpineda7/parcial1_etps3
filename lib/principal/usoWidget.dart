@@ -14,10 +14,22 @@ class _usoWidgetState extends State<usoWidget> {
       appBar: AppBar(
         title: Text('Widgets')
         ),
-      body: Center(
-        child: Text('Saludos'),
-        )
+      // body: Center(
+      //   child: Text('Saludos'),
+      //   )
+        body: mensaje(),
 
     );
   }
+}
+
+Widget mensaje() {
+  return Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(image: NetworkImage('https://vader.news/__export/1636260165164/sites/gadgets/img/2021/11/07/breaking-bad.jpg_1951075380.jpg'
+      ),fit:BoxFit.cover)),
+    child: Center(
+        child:Text('Saludos a todos',style:TextStyle(color: Colors.white, fontSize: 25, fontWeight:FontWeight.bold))
+      ),
+  );
 }
