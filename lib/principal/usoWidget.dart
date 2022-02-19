@@ -53,11 +53,14 @@ Widget nombre() {
 
 
 Widget camposUsuario () {
-  return TextField(
-      decoration:  InputDecoration(
-        hintText: "UsuarioHint",
-        fillColor: Colors.white, 
-        filled: true        
-      )
+  return Container(
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+      child:TextField(
+        decoration:  InputDecoration(
+          hintText: "UsuarioHint",
+          fillColor: Colors.white, 
+          filled: true        
+        )
+      ),
     );
 }
