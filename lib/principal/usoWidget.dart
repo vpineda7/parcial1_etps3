@@ -19,7 +19,7 @@ class _usoWidgetState extends State<usoWidget> {
       //   )
         body: mensaje(),
 
-    );
+    );   
   }
 }
 
@@ -29,7 +29,33 @@ Widget mensaje() {
       image: DecorationImage(image: NetworkImage('https://vader.news/__export/1636260165164/sites/gadgets/img/2021/11/07/breaking-bad.jpg_1951075380.jpg'
       ),fit:BoxFit.cover)),
     child: Center(
-        child:Text('Saludos a todos',style:TextStyle(color: Colors.white, fontSize: 25, fontWeight:FontWeight.bold))
+        child: Column(//Text('Saludos a todos',style:TextStyle(color: Colors.white, fontSize: 25, fontWeight:FontWeight.bold))
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            nombre(), 
+            camposUsuario(),
+
+          ],
+        )
       ),
   );
+}
+
+
+Widget nombre() {
+  return Text(
+    "Iniciar", 
+    style: TextStyle(
+      color:Colors.white, fontSize:30, fontWeight: FontWeight.bold,
+    )
+  );
+}
+
+
+Widget camposUsuario () {
+  return TextField(
+      decoration:  InputDecoration(
+        hintText: "UsuarioHint"
+      )
+    );
 }
