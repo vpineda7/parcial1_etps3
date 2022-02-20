@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginflutter/principal/usoWidget.dart';
-
+import 'package:loginflutter/paginas/pagina.dart';
 
 class Principal extends StatefulWidget {
   Principal({Key? key}) : super(key: key);
@@ -20,7 +20,8 @@ class _PrincipalState extends State<Principal> {
         body: RaisedButton(
           child: Text('Ir a pantalla login'),
           onPressed: ()=>{
-            print('objeto')
+            //print('objeto')
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Pagina()))
           },
       )
     );
