@@ -31,6 +31,7 @@ Widget pantallaLogin() {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            avatar(),
             camposNombreYappellidos(), 
             camposUsuario(),
             camposDireccion(), 

@@ -1,18 +1,54 @@
 import 'package:flutter/material.dart';
 
-Widget camposNombreYappellidos () {
+Widget avatar () {
   return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-      child:TextField(
-        decoration:  InputDecoration(
-          hintText: "Nombre",
-          fillColor: Colors.white, 
-          filled: true        
-        ),        
-      ),      
-    );
+    // padding: EdgeInsets.all(10.0),
+
+    child: Image.asset("assets/img/avatar.png"),
+    width: 85,
+    height: 85,
+  );
 }
 
+
+
+Widget camposNombreYappellidos () {
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+    child: Row(
+      children: const <Widget>[
+            Expanded(
+              child:TextField(
+                decoration:  InputDecoration(
+                  hintText: "Nombre",
+                  fillColor: Colors.white, 
+                  filled: true,
+                  icon: Icon(Icons.verified_user),
+                  
+                )
+              ),
+            ),
+            SizedBox(
+              width:10 ,
+            ),
+            SizedBox(
+              width:140,
+              child: Expanded(
+              child:TextField(                
+                decoration:  InputDecoration(
+                  hintText: "Apellidos",
+                  fillColor: Colors.white, 
+                  filled: true,
+                  
+                )
+              ),
+            )
+            )            
+                        
+          ],
+        )      
+    );
+}
 
 
 
@@ -24,7 +60,8 @@ Widget camposUsuario () {
         decoration:  InputDecoration(
           hintText: "usuario",
           fillColor: Colors.white, 
-          filled: true        
+          filled: true,
+          icon: Icon(Icons.verified_user)
         )
       ),
     );
@@ -37,7 +74,8 @@ Widget camposDireccion () {
         decoration:  InputDecoration(
           hintText: "Dirección",
           fillColor: Colors.white, 
-          filled: true        
+          filled: true,
+          icon: Icon(Icons.directions)
         ),        
       ),      
     );
@@ -52,7 +90,8 @@ Widget camposPass () {
         decoration:  InputDecoration(
           hintText: "Password",
           fillColor: Colors.white, 
-          filled: true        
+          filled: true ,
+          icon: Icon(Icons.password)
         )
       ),
     );
@@ -65,7 +104,8 @@ Widget camposTelefono () {
         decoration:  InputDecoration(
           hintText: "Telefono",
           fillColor: Colors.white, 
-          filled: true        
+          filled: true,
+          icon: Icon(Icons.phone)
         ),        
       ),      
     );
@@ -79,7 +119,9 @@ Widget camposRePass () {
         decoration:  InputDecoration(
           hintText: "Reingrese password",
           fillColor: Colors.white, 
-          filled: true        
+          filled: true,
+          icon: Icon(Icons.password)
+
         )
       ),
     );
