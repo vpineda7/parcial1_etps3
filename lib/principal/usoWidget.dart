@@ -27,8 +27,10 @@ class _usoWidgetState extends State<usoWidget> {
 Widget mensaje() {
   return Container(
     decoration: BoxDecoration(
-      image: DecorationImage(image: NetworkImage('https://vader.news/__export/1636260165164/sites/gadgets/img/2021/11/07/breaking-bad.jpg_1951075380.jpg'
-      ),fit:BoxFit.cover)),
+      image: DecorationImage(
+          //image: NetworkImage('https://vader.news/__export/1636260165164/sites/gadgets/img/2021/11/07/breaking-bad.jpg_1951075380.jpg'
+          image: AssetImage('assets/img/tech_solutions.jpg'),
+          fit:BoxFit.cover)),
     child: Center(
         child: Column(//Text('Saludos a todos',style:TextStyle(color: Colors.white, fontSize: 25, fontWeight:FontWeight.bold))
           mainAxisAlignment: MainAxisAlignment.center,
