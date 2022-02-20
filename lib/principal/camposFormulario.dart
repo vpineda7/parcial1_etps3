@@ -124,7 +124,6 @@ Widget botonGuardar () {
 Widget botonCancelar () {
   //return FlatButton(
   return ElevatedButton(  
-    
     style: ElevatedButton.styleFrom(
       primary: Colors.redAccent,
       padding: const EdgeInsets.symmetric(horizontal: 50),

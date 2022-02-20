@@ -21,39 +21,17 @@ class _FormularioState extends State<Formulario> {
   }
 }
 
-// Widget pantallaFormulario() {
-//   return Container(
-//     decoration: BoxDecoration(
-//     image: DecorationImage(
-//           image: AssetImage('assets/img/sea.jpg'),
-//           fit:BoxFit.cover)),
-//     child: Center(
-//         child: Column(
-//           mainAxisAlignment: MainAxisAlignment.center,          
-//           mainAxisSize: MainAxisSize.min,
-//           children: <Widget>[
-//             camposCarnet(),
-//             camposNombre(),
-//             camposApellidos(),
-//             camposDireccion(), 
-//             camposPass (),
-//             camposRePass (),
-//             camposCorreo(),
-            
-//             SizedBox(
-//               height: 15,
-//             ),
-//             botonGuardar(),
-//             botonCancelar()
-
-//           ],
-//         )
-//       ),
-//   );
-// }
 
 Widget pantallaFormulario() {
-  return Scaffold(
+  return Container(
+  decoration: BoxDecoration(
+    image: DecorationImage(
+      image: AssetImage('assets/img/sea.jpg'),
+      fit: BoxFit.cover,
+    ),
+  ),
+  child: Scaffold(  
+    backgroundColor: Colors.transparent,
     body: ListView(
             children: <Widget> [
             camposCarnet(),
@@ -72,6 +50,7 @@ Widget pantallaFormulario() {
 
           ],
         )
-      );
+      )
+  );
 }
 
