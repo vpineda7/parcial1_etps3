@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:loginflutter/principal/principal.dart';
-import 'package:loginflutter/principal/usoWidget.dart';
+import 'package:loginflutter/principal/login.dart';
 
 void main() {
-  runApp(UsoWidgets());
+  runApp(UsarLogin());
 }
 
 
-class UsoWidgets extends StatelessWidget {
-  const UsoWidgets({Key? key}) : super(key: key);
+class UsarLogin extends StatelessWidget {
+  const UsarLogin({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
 								title:"Clase Widget",
-								home:usoWidget(),
-                //home:Principal(),
+								home:Login(),
+                
 						 );
   }
 }
