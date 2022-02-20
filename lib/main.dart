@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:loginflutter/principal/login.dart';
+import 'package:loginflutter/principal/Formulario.dart';
 
 void main() {
-  runApp(UsarLogin());
+  runApp(UsarFormulario());
 }
 
 
-class UsarLogin extends StatelessWidget {
-  const UsarLogin({Key? key}) : super(key: key);
+class UsarFormulario extends StatelessWidget {
+  const UsarFormulario({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
 								title:"Clase Widget",
-								home:Login(),
+								//home:Login(),
+                home:Formulario(),
                 
 						 );
   }

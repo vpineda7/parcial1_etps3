@@ -24,12 +24,13 @@ class _LoginState extends State<Login> {
 Widget pantallaLogin() {
   return Container(
     decoration: BoxDecoration(
-      image: DecorationImage(
+    image: DecorationImage(
           image: AssetImage('assets/img/desert.jpg'),
           fit:BoxFit.cover)),
     child: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,          
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             avatar(),
             camposNombreYappellidos(), 
@@ -39,7 +40,7 @@ Widget pantallaLogin() {
             camposTelefono(),
             camposRePass (),
             SizedBox(
-              height: 20,
+              height: 15,
             ),
             botonGuardar(),
             botonCancelar()

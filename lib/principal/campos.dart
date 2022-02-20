@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 
 Widget avatar () {
   return Container(
-    // padding: EdgeInsets.all(10.0),
-
     child: Image.asset("assets/img/avatar.png"),
-    width: 85,
-    height: 85,
+    height: 80,
   );
 }
 
@@ -71,6 +68,9 @@ Widget camposDireccion () {
   return Container(
       padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
       child:TextField(
+        minLines: 1,
+        maxLines: 2,  
+        keyboardType: TextInputType.multiline,
         decoration:  InputDecoration(
           hintText: "Dirección",
           fillColor: Colors.white, 
